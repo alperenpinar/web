@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic Portfolio, Lectures and Publications of M.Sc. Geomatics Engineer">
+    <title>Academic Portfolio | Loading...</title>
+    <!-- 2026 Academic Typography System: Mono for UI, Serif for Name -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- data.js: Content System -->
+    <script src="data.js"></script>
+</head>
+<body>
+    <div class="noise-overlay"></div>
+
+    <div class="academic-layout">
+        <!-- Persistent Left Sidebar - Academic Index -->
+        <aside class="sidebar-index">
+             <div class="profile-header">
+                 <h1 id="site-name" class="serif-title">Name</h1>
+                 <p id="site-title" class="mono-subtitle">Title</p>
+             </div>
+             
+             <nav id="nav-menu" class="index-nav">
+                 <!-- Generated dynamically from data.js -->
+             </nav>
+             
+             <div class="footer-meta">
+                 <p id="site-footer">Footer</p>
+             </div>
+        </aside>
+
+        <!-- Right Content Area - Journal Body -->
+        <main class="journal-content">
+            <header class="mobile-nav">
+                <h2 id="mobile-name">Name</h2>
+                <button id="menu-toggle">MENU</button>
+            </header>
+
+            <article id="content-container" class="article-container">
+                 <!-- Generated dynamically from data.js. This ensures links added to the left stay on the same page -->
+            </article>
+
+            <!-- Sağ Alt Sabit Sosyal Linkler -->
+            <div id="social-links" class="social-links-floating"></div>
+        </main>
+    </div>
+
+    <!-- 2026 Animation Engine -->
+    <script src="script.js"></script>
+</body>
+</html>
