@@ -248,12 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
 
-            const yOffset = -120;
-            const element = document.querySelector('.journal-content');
-            if (element) {
-                const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                window.scrollTo({ top: y, behavior: 'smooth' });
-            }
+            // Scrolled position correction removed to prevent top title from hiding
         }, maxDelay);
     }
 

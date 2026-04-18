@@ -85,12 +85,15 @@ body {
 }
 
 @media (max-width: 768px) {
+    .header-container {
+        padding: 1.5rem 1rem 1rem 1rem !important;
+    }
     .title-area h1,
     .title-area #site-title {
-        font-size: 22px;
-        line-height: 1.3;
+        font-size: 19px !important;
+        line-height: 1.2;
         text-align: center;
-        padding: 0 1rem;
+        white-space: nowrap;
     }
 }
 
