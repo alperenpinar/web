@@ -248,7 +248,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
 
-            // Scrolled position correction removed to prevent top title from hiding
+            // Scroll to top to ensure visibility of the new content
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }, maxDelay);
     }
 
