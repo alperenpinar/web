@@ -124,7 +124,7 @@ const portfolioData = {
                 {
                     title: "Geodetic Data Processing",
                     text: "Time series analyses, Kalman filtering, and advanced adjustment computation techniques.",
-                    linkUrl: "data_processing.pdf",
+                    linkUrl: "pdf/data_processing.pdf",
                     linkText: "Download Notes"
                 }
             ]
@@ -203,7 +203,7 @@ const portfolioData = {
                         {
                             subTitle: "Ders Notları",
                             links: [
-                                { text: "Fıkh-ı Ekber Okumaları (PDF)", url: "Fıkh-ı Ekber.pdf" },
+                                { text: "Fıkh-ı Ekber Okumaları (PDF)", url: "pdf/Fıkh-ı Ekber.pdf" },
                             ]
                         }
                     ]
@@ -256,7 +256,7 @@ const portfolioData = {
                         {
                             subTitle: "Ders Notları",
                             links: [
-                                { text: "Cuma Namazı (PDF)", url: "cumanamazi.pdf" }
+                                { text: "Cuma Namazı (PDF)", url: "pdf/cumanamazi.pdf" }
                             ]
                         }
                     ]
@@ -361,7 +361,7 @@ const portfolioData = {
                 {
                     title: "KOÜ Sıklaştırma Nivelman Ağında Sağlamlık ve Kalite Sorgulaması (Lisans)",
                     text: "Lisans eğitimimi tamamladığım bitirme projesi.",
-                    linkUrl: "Nivelman Ağında Sağlamlık ve Kalite Sorgulaması.pdf",
+                    linkUrl: "pdf/Nivelman Ağında Sağlamlık ve Kalite Sorgulaması.pdf",
                     linkText: "Download (PDF)"
                 },
                 // YÜKSEK LİSANS
