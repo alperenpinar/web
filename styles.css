@@ -145,11 +145,12 @@ body {
 .nav-container {
     max-width: 1300px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     display: flex;
+    justify-content: center;
     overflow-x: auto;
     scrollbar-width: none;
-    gap: 0.5rem;
+    gap: 0.3rem;
 }
 .nav-container::-webkit-scrollbar {
     display: none; /* Hide scrollbar WebKit */
@@ -564,9 +565,10 @@ body {
 
 @media (max-width: 768px) {
     .header-container {
+        padding: 2.5rem 1rem 1.5rem 1rem !important;
         flex-direction: column;
-        align-items: flex-start;
-        gap: 1.5rem;
+        align-items: center; 
+        gap: 0.8rem;
     }
     .items-grid {
         grid-template-columns: 1fr;
