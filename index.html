@@ -1,56 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Academic Portfolio, Lectures and Publications of M.Sc. Geomatics Engineer">
     <title>Academic Portfolio | Loading...</title>
-    <!-- 2026 Academic Typography System: Mono for UI, Serif for Name -->
+    <!-- Modern Typography: Outfit for headers, Inter for standard text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    
-    <!-- data.js: Content System -->
+
+    <!-- Content logic -->
     <script src="data.js"></script>
+
+    <!-- Google Analytics (Visitor & PDF Download Tracking) -->
+    <!-- REPLACE 'G-FNNGGLPY75' WITH YOUR ACTUAL GOOGLE ANALYTICS ID -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNNGGLPY75"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FNNGGLPY75');
+    </script>
+    -->
 </head>
+
 <body>
     <div class="noise-overlay"></div>
 
-    <div class="academic-layout">
-        <!-- Persistent Left Sidebar - Academic Index -->
-        <aside class="sidebar-index">
-             <div class="profile-header">
-                 <h1 id="site-name" class="serif-title">Name</h1>
-                 <p id="site-title" class="mono-subtitle">Title</p>
-             </div>
-             
-             <nav id="nav-menu" class="index-nav">
-                 <!-- Generated dynamically from data.js -->
-             </nav>
-             
-             <div class="footer-meta">
-                 <p id="site-footer">Footer</p>
-             </div>
-        </aside>
+    <div class="site-wrapper">
+        <!-- Site Header -->
+        <header class="header">
+            <div class="header-container">
+                <a href="index.html" class="title-link" style="text-decoration:none;">
+                    <div class="title-area">
+                        <span id="site-title">Title</span>
+                        <h1 id="site-name">Name</h1>
+                    </div>
+                </a>
+            </div>
 
-        <!-- Right Content Area - Journal Body -->
-        <main class="journal-content">
-            <header class="mobile-nav">
-                <h2 id="mobile-name">Name</h2>
-                <button id="menu-toggle">MENU</button>
-            </header>
+            <!-- Horizontal Navigation (Glassmorphism effect) -->
+            <nav class="top-nav">
+                <div class="nav-container" id="nav-menu">
+                    <!-- Nav items dynamically injected here -->
+                </div>
+            </nav>
+        </header>
 
-            <article id="content-container" class="article-container">
-                 <!-- Generated dynamically from data.js. This ensures links added to the left stay on the same page -->
-            </article>
+        <!-- Main Layout: Content and Sidebar -->
+        <div class="main-layout">
 
-            <!-- Sağ Alt Sabit Sosyal Linkler -->
-            <div id="social-links" class="social-links-floating"></div>
-        </main>
+            <main class="journal-content">
+                <article id="content-container" class="article-container">
+                    <!-- Generated dynamically from data.js -->
+                </article>
+            </main>
+
+            <!-- Announcements Sidebar matching the professor's layout -->
+            <aside class="announcements-sidebar">
+                <div class="sidebar-inner">
+                    <h2 class="sidebar-title">Announcements</h2>
+                    <div class="sidebar-divider"></div>
+
+                    <div class="announcement-card mt-3">
+                        <span class="announcement-date">📌 IMPORTANT</span>
+                        <p class="announcement-text">
+                            Information about all courses related to <strong>Graduate, Undergraduate, and
+                                Vocational</strong> levels are easily accessible from <strong>their tabs</strong> above.
+                        </p>
+                    </div>
+
+                    <div class="announcement-year">******* 2026 *******</div>
+
+                    <div class="announcement-card">
+                        <span class="announcement-date">17-20 May 2026</span>
+                        <p class="announcement-text"><strong>8ICEES, 8th. International Conference on Earthquake
+                                Engineering and Seismology</strong><br>Pine Bay Hotel Convention Center, Kuşadası, Aydın
+                            / Türkiye.</p>
+                        <a href="#" class="announcement-link">Go to Web</a>
+                    </div>
+
+                    <div class="announcement-card">
+                        <span class="announcement-date">13-17 Apr 2026</span>
+                        <p class="announcement-text"><strong>JMO, 78. Geological Congress of Türkiye</strong><br>MTA
+                            General Directorate Cultural Center, Ankara.</p>
+                        <a href="#" class="announcement-link">Go to Web</a>
+                    </div>
+
+                    <div class="announcement-card">
+                        <span class="announcement-date">05-09 Oct 2026</span>
+                        <p class="announcement-text"><strong>IAC2026, The 77th International Astronautical
+                                Congress</strong><br>Belek, Antalya / Türkiye.</p>
+                        <a href="#" class="announcement-link">Go to Web</a>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+
     </div>
 
-    <!-- 2026 Animation Engine -->
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="#about">About</a> | <a href="#privacy">Privacy Policy</a> | <a href="#sitemap">Sitemap</a>
+                <p>Geomatics Engineering Department</p>
+            </div>
+            <div class="footer-right">
+                <p id="site-footer">Footer Content</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="social-links" class="floating-socials"></div>
+
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
+
 </html>

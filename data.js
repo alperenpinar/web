@@ -1,7 +1,7 @@
 const portfolioData = {
     personalInfo: {
         name: "Alperen Pınar",
-        title: "M.Sc.Geomatics Engineer",
+        title: "M.Sc.",
         footerText: "© 2026 Telif Hakkı İttifakı",
         socialLinks: [
             { platform: "Facebook", svg: "<svg width='20' height='20' fill='currentColor' viewBox='0 0 24 24'><path d='M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z'/></svg>", url: "https://facebook.com" },
@@ -50,16 +50,10 @@ const portfolioData = {
             description: "A directory of academic links, mapping institutions and related technical fields.",
             items: [
                 {
-                    title: "International GNSS Service (IGS)",
-                    text: "Providing the highest-quality GNSS data and products in support of the terrestrial reference frame.",
-                    linkUrl: "https://igs.org/",
-                    linkText: "IGS Portal"
-                },
-                {
-                    title: "Harita Genel Müdürlüğü (HGM)",
-                    text: "General Directorate of Mapping. Access to CORS-TR (TUSAGA-Aktif) and national mapping datasets.",
-                    linkUrl: "https://www.harita.gov.tr/",
-                    linkText: "HGM Official Site"
+                    title: "Assoc. Dr. Orhan KURT",
+                    text: "Academic portfolio and supplementary course materials.",
+                    linkUrl: "https://orhankurt.jimdofree.com/",
+                    linkText: "Visit Web Page"
                 }
             ]
         },
@@ -96,10 +90,36 @@ const portfolioData = {
             description: "Master's lecture contents.",
             items: [
                 {
-                    title: "Space Geodesy Advanced",
-                    text: "Extensive theory detailing satellite positioning, error mitigation models, and relativistic effects on GPS signals.",
-                    linkUrl: "space_geodesy_adv.pdf",
-                    linkText: "Syllabus (PDF)"
+                    title: "JJM615 Data Modeling and Analyzing (Autumn)",
+                    subSections: [
+                        {
+                            subTitle: "Lecture Notes",
+                            links: [
+                                { text: "Alperen PINAR (2026), Data Modeling and Analyzing Class Notes", url: "#" }
+                            ]
+                        },
+                        {
+                            subTitle: "Supporting Lectures",
+                            links: [
+                                { text: "Numerical Analysis", url: "#" },
+                                { text: "Programming in Geoinformatics", url: "#" },
+                                { text: "Linear Algebra", url: "#" }
+                            ]
+                        },
+                        {
+                            subTitle: "Homework - Spring 2025-2026",
+                            links: [
+                                { text: "Midterm Project -> Upload Format", url: "#" },
+                                { text: "Final Project -> Upload Format", url: "#" }
+                            ]
+                        },
+                        {
+                            subTitle: "References",
+                            links: [
+                                { text: "Non-parametric Data and Tests (Distribution Free Tests)", url: "#" }
+                            ]
+                        }
+                    ]
                 },
                 {
                     title: "Geodetic Data Processing",
@@ -150,22 +170,9 @@ const portfolioData = {
         {
             id: "vocational",
             navLabel: "VOCATIONAL",
-            pageTitle: "Vocational School",
-            description: "Lecture contents oriented towards field surveying techniques.",
-            items: [
-                {
-                    title: "Topographic Measurements",
-                    text: "Hands-on guide to using Total Stations, setting up traverse networks and conducting leveling.",
-                    linkUrl: "#",
-                    linkText: "Field Guide PDF"
-                }
-            ]
-        },
-        {
-            id: "high_school",
-            navLabel: "HIGH SCHOOL",
-            pageTitle: "High School Studies",
-            description: "Foundational educational materials, basic concepts, and field training modules for vocational/technical high school students.",
+            pageTitle: "Meslek Lisesi",
+            description: "Bu bölümde harita mühendisliği bölümünden farklı, meslek lisesinde gördüğüm derslere ait içerikler ve dokümanlar yer almaktadır. Uzmanlığım dışında bir alandır.",
+
             items: [
                 {
                     title: "Introduction to Map Reading",
@@ -176,22 +183,200 @@ const portfolioData = {
             ]
         },
         {
+            id: "high_school",
+            navLabel: "HIGH SCHOOL",
+            pageTitle: "High School Studies",
+            description: "Foundational educational materials, basic concepts, and field training modules for vocational/technical high school students.",
+            items: [
+                // AKAİD
+                {
+                    title: "Akâidin Tanımı (Akaid)",
+                    subSections: [
+                        {
+                            text: "<strong>Akâid,</strong> İslam dininin inanılması gereken temel esaslarını konu edinen ilim dalıdır. Bu alan; Allah’ın varlığı ve birliği, sıfatları, peygamberlik, vahiy, ahiret, kader ve iman esasları gibi inanç konularını ele alır. Akâid ilmi, Müslümanın inanç dünyasını sağlam temellere oturtmayı amaçlar ve dinî hayatın fikrî çerçevesini oluşturur. Bu yönüyle akâid, İslam düşüncesinde hem bireysel inancın korunması hem de dinî anlayışın sistemli biçimde açıklanması açısından temel bir yere sahiptir.",
+                        }
+                    ]
+                },
+                {
+                    title: "İman Esasları (Akaid)",
+                    subSections: [
+                        {
+                            subTitle: "Ders Notları",
+                            links: [
+                                { text: "Fıkh-ı Ekber Okumaları (PDF)", url: "Fıkh-ı Ekber.pdf" },
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: "Tevhid İnancı (Akaid)",
+                    subSections: [
+                        {
+                            subTitle: "Ders Notları",
+                            links: [
+                                // { text: "Örnek PDF (PDF)", url: "dosya.pdf" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: "Ahiret İnancı (Akaid)",
+                    subSections: [
+                        {
+                            subTitle: "Ders Notları",
+                            links: [
+                                // { text: "Örnek PDF (PDF)", url: "dosya.pdf" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: "Kaza ve Kader (Akaid)",
+                    subSections: [
+                        {
+                            subTitle: "Ders Notları",
+                            links: [
+                                // { text: "Örnek PDF (PDF)", url: "dosya.pdf" }
+                            ]
+                        }
+                    ]
+                },
+                // FIKIH
+                {
+                    title: "Fıkhın Tanımı (Fıkıh)",
+                    subSections: [
+                        {
+                            text: "<strong>Fıkıh,</strong> İslam dininin ibadet, muamelat ve günlük hayata ilişkin hükümlerini delilleriyle birlikte inceleyen ilim dalıdır. Bu alan, bireyin dinî sorumluluklarını ve toplumsal ilişkilerini düzenleyen hükümleri sistemli biçimde ele alır. Fıkıh ilmi, Kur’an ve sünnet başta olmak üzere İslam’ın temel kaynaklarına dayanarak Müslümanın amelî hayatına yön verir ve dinî yaşamın uygulama boyutunu oluşturur.",
+                        }
+                    ]
+                },
+                {
+                    title: "İbadetler (Fıkıh)",
+                    subSections: [
+                        {
+                            subTitle: "Ders Notları",
+                            links: [
+                                { text: "Cuma Namazı (PDF)", url: "cumanamazi.pdf" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: "Muamelat (Fıkıh)",
+                    subSections: [
+                        {
+                            subTitle: "Ders Notları",
+                            links: [
+                                // { text: "Örnek PDF (PDF)", url: "dosya.pdf" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: "Mezhepler (Fıkıh)",
+                    subSections: [
+                        {
+                            subTitle: "Ders Notları",
+                            links: [
+                                // { text: "Örnek PDF (PDF)", url: "dosya.pdf" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: "Fıkhın Kaynakları (Fıkıh)",
+                    subSections: [
+                        {
+                            subTitle: "Ders Notları",
+                            links: [
+                                // { text: "Örnek PDF (PDF)", url: "dosya.pdf" }
+                            ]
+                        }
+                    ]
+                },
+
+                // TEFSİR
+                {
+                    title: "Tefsirin Tanımı (Tefsir)",
+                    subSections: [
+                        {
+                            text: "<strong>Tefsir,</strong> Kur’an-ı Kerîm’in anlamını açıklamayı, ayetlerin nüzul sebeplerini, lafız ve mana yönlerini ortaya koymayı konu edinen ilim dalıdır. Bu disiplin, ilahî mesajın doğru anlaşılmasını amaçlayarak ayetleri dil, bağlam, rivayet ve dirayet çerçevesinde inceler. Tefsir ilmi, Kur’an’ın içerdiği inanç, ibadet, ahlak ve toplumsal hayata dair hükümleri açıklaması bakımından İslam ilimleri içerisinde temel bir yere sahiptir.",
+
+                        }
+                    ]
+                },
+                {
+                    title: "Müfessirler (Tefsir)",
+                    subSections: [
+                        {
+                            subTitle: "Ders Notları",
+                            links: [
+                                // { text: "Örnek PDF (PDF)", url: "dosya.pdf" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: "Tefsir Usulü (Tefsir)",
+                    subSections: [
+                        {
+                            subTitle: "Ders Notları",
+                            links: [
+                                // { text: "Örnek PDF (PDF)", url: "dosya.pdf" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: "Başlıca Eserler (Tefsir)",
+                    subSections: [
+                        {
+                            subTitle: "Ders Notları",
+                            links: [
+                                // { text: "Örnek PDF (PDF)", url: "dosya.pdf" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: "Ayetlerin Yorumu (Tefsir)",
+                    subSections: [
+                        {
+                            subTitle: "Ders Notları",
+                            links: [
+                                // { text: "Örnek PDF (PDF)", url: "dosya.pdf" }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             id: "publications",
             navLabel: "PUBLICATIONS",
             pageTitle: "Academic Publications",
             description: "Published articles, symposium proceedings and scientific literature.",
             items: [
+                // LİSANS
                 {
-                    title: "Comparison of Precise vs Broadcast Ephemeris",
-                    text: "An analytical study investigating the temporal decay of accuracy in GPS and GLONASS broadcast signals.",
-                    linkUrl: "#",
-                    linkText: "Read Article (DOI)"
+                    title: "KOÜ Sıklaştırma Nivelman Ağında Sağlamlık ve Kalite Sorgulaması (Lisans)",
+                    text: "Lisans eğitimimi tamamladığım bitirme projesi.",
+                    linkUrl: "Nivelman Ağında Sağlamlık ve Kalite Sorgulaması.pdf",
+                    linkText: "Download (PDF)"
                 },
+                // YÜKSEK LİSANS
                 {
-                    title: "Metric Tensor Formulations in Earth Sciences",
-                    text: "Presented at the International Earth Sciences Convention.",
+                    title: " (Yüksek Lisans)",
+                    text: "",
                     linkUrl: "#",
-                    linkText: "Event Proceeding"
+                    linkText: "Download (PDF)"
+                },
+                // DOKTORA
+                {
+                    title: "(Doktora)",
+                    text: "",
+                    linkUrl: "#",
+                    linkText: "Download (PDF)"
                 }
             ]
         },
@@ -236,6 +421,33 @@ const portfolioData = {
                 </div>
             </div>
             `
+        },
+        {
+            id: "about",
+            navLabel: "About",
+            pageTitle: "About Me",
+            hiddenNav: true,
+            description: "Detailed information about my academic background, ongoing research, and personal philosophy.",
+            customHTML: "<p>Welcome to my academic portfolio. I am a researcher focusing on precise geomatics and mathematical modeling. My work strives to bridge the gap between traditional geodetic surveying frameworks and modern big data processing methods. <br><br>Feel free to browse my published papers, consult my lecture notes, or contact me via my designated email channels.</p>",
+            items: []
+        },
+        {
+            id: "privacy",
+            navLabel: "Privacy Policy",
+            pageTitle: "Privacy Policy",
+            hiddenNav: true,
+            description: "Information regarding the storage of local data and tracking.",
+            customHTML: "<p>This is a static academic website mainly built as a portfolio and course-material relay. It does not collect invasive tracking data, non-essential cookies, or distribute user metrics to third parties. Any analytical software applied serves strictly to assess page traffic generically.</p>",
+            items: []
+        },
+        {
+            id: "sitemap",
+            navLabel: "Sitemap",
+            pageTitle: "Sitemap",
+            hiddenNav: true,
+            description: "Overview of all static sections.",
+            customHTML: "<ul><li><a href='#preface'>Preface</a></li><li><a href='#webs'>Webs</a></li><li><a href='#software_products'>Software Products</a></li><li><a href='#graduate'>Graduate</a></li><li><a href='#undergraduate'>Undergraduate</a></li><li><a href='#vocational'>Meslek Lisesi</a></li><li><a href='#high_school'>High School</a></li><li><a href='#publications'>Publications</a></li><li><a href='#contact'>Contact</a></li></ul>",
+            items: []
         }
     ]
 };
